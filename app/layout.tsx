@@ -27,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${workSans.variable} antialiased`}>
+    <html lang="en" className={workSans.variable} suppressHydrationWarning>
+      <body className="antialiased">
         {children}
       </body>
     </html>
